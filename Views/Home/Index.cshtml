@@ -1,0 +1,82 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <div class="row shadow rounded">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+            <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
+                <div class="carousel-inner h-100">
+                    <div class="carousel-item  h-100 active">
+                        <img src="~/images/carouselimages/img3.jpg" class="d-block w-100 h-100" alt="Burger">
+                    </div>
+                    <div class="carousel-item h-100 ">
+                        <img src="~/images/carouselimages/img2.jpg" class="d-block w-100 h-100" alt="Pizza">
+                    </div>
+                    <div class="carousel-item h-100">
+                        <img src="~/images/carouselimages/img1.jpg" class="d-block w-100 h-100" alt="Salad with  Roasted chicken">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 "> 
+            <div class="mb-3">
+                <h2> Discover the <span class="text-success"> finest foods</span> from <span class="text-success"> top-rated </span> 
+                    restaurants. </h2>
+            </div>
+            <div class="mb-1 p-3">
+                <span> <i class="fa-solid fa-wheat-awn text-success mx-2 fs-4"></i></span>
+                <span class="fs-5 text-dark fst-italic"> Healthy Meal </span>
+            </div>
+            <div class="mb-1 p-3">
+                <span> <i class="fa-solid fa-seedling text-success mx-2 fs-4"></i></span>
+                <span class="fs-5 text-dark fst-italic"> Freash Food </span>
+            </div>
+            <div class="mb-1 p-3">
+                <span> <i class="fa-solid fa-person-biking text-success mx-2 fs-4"></i></span>
+                <span class="fs-5 text-dark fst-italic"> Fastest Delivery </span>
+                <p class="py-2"> We guarantee the fastest delivery time for your order. </p>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class= "col-12 mb-3">
+            <h2 class="text-dark fst-italic"> Today's special</h2>
+            <div id="todaySpecial" class="row">
+                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                    <div class="card dishcard">
+                        <img class="card-img-top h-75" src="http://forkify-api.herokuapp.com/images/sliders089d.jpg" alt="pizza" />
+                        <div class="card-body">
+                            <p class="card-title fw-bold"> bbq </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                    <div class="card dishcard">
+                        <img class="card-img-top h-75" src="http://forkify-api.herokuapp.com/images/7362347228_f0153cc88db1af.jpg" alt="brocolli" />
+                        <div class="card-body">
+                            <p class="card-title fw-bold"> brocolli </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                    <div class="shadow rounded card dishcard">
+                        <img class="card-img-top h-75" src="http://forkify-api.herokuapp.com/images/berry1f7f.jpg" alt="raspberry" />
+                        <div class="card-body">
+                            <p class="card-title fw-bold">raspberry </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
