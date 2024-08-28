@@ -9,7 +9,7 @@
     </div>
     <div class="row"> 
         <div class="col-2">
-            <div class="shadow rounded">
+            <div class="shadow rounded position-sticky" id="recipe-list">
                 <div class="border-bottom  border-3 p-2">
                     <h4 class="text-pink text-center fst-italic"> Recipes </h4>
                    @Html.Partial("_SideMenu")
@@ -21,6 +21,18 @@
                 <h4 class="text-dark"> Pizza </h4>
                 <div class="row" id="pizzaRecipe"></div>
             </div>
+            <div class="mb-3">
+                <h4 class="text-dark"> Fish </h4>
+                <div class="row" id="FishRecipe"></div>
+            </div>
+            <div class="mb-3">
+                <h4 class="text-dark"> Ice cream </h4>
+                <div class="row" id="IcecreamRecipe"></div>
+            </div>
+            <div class="mb-3">
+                <h4 class="text-dark"> Chocolate</h4>
+                <div class="row" id="ChocolateRecipe"></div>
+            </div>
         </div>
     </div>
 </div>
@@ -29,5 +41,8 @@
 <script type="text/javascript">
     $(document).ready(function () {
         GetRecipes("Pizza","pizzaRecipe" ,false);
+        GetRecipes("Fish", "FishRecipe", false);
+        GetRecipes("Ice cream", "IcecreamRecipe", false);
+        GetRecipes("Chocolate", "ChocolateRecipe", false);
     })
 </script>

@@ -33,8 +33,9 @@ footer{
 header{
     z-index:1000;
 }
-dishcard{
-    height:300px;
+dishcard {
+    height: 250px;
+  
 }
 .fa-instagram {
     color: #bc2a8d;
@@ -51,13 +52,13 @@ dishcard{
 #recipe-list{
     top: 5rem;
 }
-#recipe-list::-webkit-scrollbar{
+#recipe-list ul::-webkit-scrollbar{
     width: 10px;
 }
-#recipe-list::-webkit-scrollbar-track{
+#recipe-list ul::-webkit-scrollbar-track{
     background-color:#ffffff;
 }
-#recipe-list::-webkit-scrollbar-thumb{
+#recipe-list ul::-webkit-scrollbar-thumb{
     background-color:#ff1448;
     border-radius:10px;
 }
@@ -68,3 +69,28 @@ dishcard{
 .recipe-item:hover a{
     color:#ffffff !important;
 }
+.dishcard {
+    width: 100%; /* Full width of the parent column */
+    height: 300px; /* Fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distributes space between child elements */
+
+}
+
+.dishcard img {
+    object-fit: cover; /* Ensures the image fills its container without stretching */
+    height: 150px; /* Adjust to desired image height */
+    width: 100%; /* Full width */
+    margin-bottom: 3px;
+}
+
+
+.card-body {
+    padding: 10px; /* Adjust the padding for content */
+    flex-grow: 1; /* Makes sure the body takes available space */
+    margin-bottom: 3px;
+}
+.col-sm-4, .col-md-4, .col-lg-4, .col-xl-4 {
+    margin-bottom: 5px; /* Adds space between the bottom of each card container */
+}   

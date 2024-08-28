@@ -4,13 +4,13 @@
 // Write your JavaScript code.
 
 let apiURL = "https://forkify-api.herokuapp.com/api/v2/recipes";
-let apikey = "5116e63a-f592-4f40-97cf-367d695e6750";
+let apikey = "f397660b-f9ca-4af7-8e47-a44ff39832ae";
 async function GetRecipes(recipeName,id,isAllShow) {
-    let resp = await fetch('${apiURL}?search=${recipeName}&key=${apikey}');
+    let resp = await fetch(`${apiURL}?search=${recipeName}&key=${apikey}`);
     let result = await resp.json();
     console.log(result);
-    let showRecipes = isAllShow ? result.data.recipes : result.data.recipes.slice(0, 5);
-    showRecipes(showRecipes, id);
+    let Recipes = isAllShow ? result.data.recipes : result.data.recipes.slice(1, 7);
+    showRecipes(Recipes, id);
 }
 
 function showRecipes(recipes, id) {

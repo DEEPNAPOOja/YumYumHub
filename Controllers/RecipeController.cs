@@ -11,9 +11,14 @@ namespace YumYumHub.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult GetRecipeCard([FromBody] List<Recipe> Recipes)
+        public IActionResult GetRecipeCard([FromBody] List<Recipe> recipes)
         {
-            return PartialView("", Recipes);
+            return PartialView("_RecipeCard", recipes);
+        }
+
+        public IActionResult search()
+        {
+            return View();
         }
     }
 }
